@@ -15,6 +15,53 @@ function toggleMenu() {
             document.body.classList.remove('no-scroll');
         });
     });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            navPopup.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+        }
+    })
+}
+
+function swiperImg() {
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: { delay: 3000 },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,   // optional but usually needed
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+}
+
+
+function headerShowHide() {
+    let lastScroll = 0;
+    const header = document.querySelector('.header');
+    const hero = document.querySelector(".hero"); 
+
+    window.addEventListener('scroll', () => {
+        const current = window.scrollY;
+
+        if (current > lastScroll) {
+            header.classList.add("hide-header");
+        } else {
+            header.classList.remove('hide-header');
+        }
+
+        lastScroll = current;
+    });
 }
 
 toggleMenu()
+swiperImg()
+headerShowHide()
+
+
+
+
