@@ -635,6 +635,11 @@ footer h3 {
 .swiper-wrapper {
     cursor: grab;
 }
+
+.swiper-wrapper img{
+    width: 100%;
+    height: 100%;
+}
 .swiper-button-prev,
 .swiper-button-next {
     display: none !important; /* !important overrides inline Swiper styles */
