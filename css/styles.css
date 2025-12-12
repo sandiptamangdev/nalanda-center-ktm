@@ -1,3 +1,60 @@
+@font-face {
+    font-family: 'font_1';
+    src: url(/assets/fonts/woff2/Lato-Bold.woff2) format('woff2'),
+        url(/assets/fonts/woff/Lato-Bold.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font_2';
+    src: url(/assets/fonts/woff2/lato.medium.woff2) format('woff2'),
+        url(/assets/fonts/woff/lato.medium.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font_3';
+    src: url(/assets/fonts/woff2/Lato-Regular.woff2) format('woff2'),
+        url(/assets/fonts/woff/Lato-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font_4';
+    src: url(/assets/fonts/woff2/LEMONMILK-Regular.woff2) format('woff2'),
+        url(/assets/fonts/woff/LEMONMILK-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font_5';
+    src: url(/assets/fonts/woff2/LEMONMILK-Medium.woff2) format('woff2'),
+        url(/assets/fonts/woff/LEMONMILK-Medium.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font_6';
+    src: url(/assets/fonts/woff2/MYRIADPRO-REGULAR.woff2) format('woff2'),
+        url(/assets/fonts/woff/MYRIADPRO-REGULAR.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font_7';
+    src: url(/assets/fonts/woff2/RamusRegular.woff2) format('woff2'),
+        url(/assets/fonts/woff/RamusRegular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 :root {
     --primary-bg: #fdf8e8;
     --nav-bg: #f3cc98;
@@ -53,54 +110,6 @@ p {
     letter-spacing: 0px;
 }
 
-@font-face {
-    font-family: 'font_1';
-    src: url(/assets/fonts/Lato-Bold.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'font_2';
-    src: url(/assets/fonts/Lato-Medium.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'font_3';
-    src: url(/assets/fonts/Lato-Regular.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'font_4';
-    src: url(/assets/fonts/LEMONMILK-Regular.otf) format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'font_5';
-    src: url(/assets/fonts/LEMONMILK-Medium.otf) format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'font_6';
-    src: url(/assets/farticle_containeronts/MYRIADPRO-REGULAR.OTF) format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'font_7';
-    src: url(/assets/fonts/RamusRegular.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 /* nav */
 nav button {
