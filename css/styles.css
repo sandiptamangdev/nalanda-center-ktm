@@ -327,7 +327,7 @@ nav {
 /* about */
 
 .about {
-    padding: 2rem 0;
+    padding: 1rem;
 }
 
 fieldset {
@@ -389,7 +389,9 @@ legend {
     text-align: justify;
 }
 
-article .article_container {
+
+
+.article_container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -412,6 +414,12 @@ article .article_container {
 .proiects_container .content h3 {
     font-family: var(--lato-bold), system-ui, sans-serif;
     font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image img {
@@ -466,7 +474,7 @@ article .article_container {
         display: flex;
         flex-direction: row;
         margin-bottom: 0;
-        padding: 2rem 0;
+        padding: 2rem;
     }
     .proiects_container .content {
         align-items: flex-start;
