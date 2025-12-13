@@ -707,6 +707,10 @@ header {
     height: 100px;
 }
 
+.nav_wrapper {
+    height: 70px;
+}
+
 nav {
     position: relative;
     height: 70px;
@@ -745,6 +749,10 @@ nav {
     /* header {
         height: 100px;
     } */
+
+    .nav_wrapper {
+        height: 80px;
+    }
 
     nav {
         height: 80px;
