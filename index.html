@@ -102,7 +102,20 @@
         <section class="hero" class="hero">
             <div class="swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="assets/img/image_slider/hero_1.webp" alt="" loading="eager" fetch-priority="high"/></div>
+                    <div class="swiper-slide">
+                        <img 
+                            src="assets/img/image_slider/hero_1_400.webp"
+                            srcset="assets/img/image_slider/hero_1_400.webp 400w,
+                                    assets/img/image_slider/hero_1_800.webp 800w,
+                                    assets/img/image_slider/hero_1_1600.webp 1600w"
+                            sizes="(min-width: 1200px) 1600px,
+                                    (min-width: 600px) 600px,
+                                    400px"   
+                            alt="" 
+                            loading="eager" 
+                            fetch-priority="high"
+                        />
+                    </div>
                     <div class="swiper-slide"><img src="assets/img/image_slider/hero_1.webp" alt="" loading="eager"/></div>
                     <div class="swiper-slide"><img src="assets/img/image_slider/hero_1.webp" alt="" loading="eager"/></div>
                     <div class="swiper-slide"><img src="assets/img/image_slider/hero_1.webp" alt="" loading="eager"/></div>
