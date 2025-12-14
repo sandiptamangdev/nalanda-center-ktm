@@ -41,22 +41,18 @@ function swiperImg() {
 
 
 function navShowHide() {
-    // let lastScroll = 0;
     const header = document.querySelector('.header');
     const nav = document.querySelector('.nav');
 
     const headerHeight = header.offsetHeight;
 
     window.addEventListener('scroll', () => {
-        // const current = window.scrollY;
 
         if (window.scrollY > headerHeight) {
             nav.classList.add("sticky");
         } else {
             nav.classList.remove('sticky');
         }
-
-        // lastScroll = current;
     });
 }
 
