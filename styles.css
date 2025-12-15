@@ -3,7 +3,7 @@
 @font-face {
     font-family: 'font_1';
     src: url(./woff2/Lato-Bold.woff2) format('woff2'),
-        url(/woff/Lato-Bold.woff) format('woff');
+        url(./woff/Lato-Bold.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -42,16 +42,16 @@
 }
 @font-face {
     font-family: 'font_6';
-    src: url(/woff2/MYRIADPRO-REGULAR.woff2) format('woff2'),
-        url(/woff/MYRIADPRO-REGULAR.woff) format('woff');
+    src: url(./woff2/MYRIADPRO-REGULAR.woff2) format('woff2'),
+        url(./woff/MYRIADPRO-REGULAR.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'font_7';
-    src: url(/woff2/RamusRegular.woff2) format('woff2'),
-        url(/woff/RamusRegular.woff) format('woff');
+    src: url(./woff2/RamusRegular.woff2) format('woff2'),
+        url(./woff/RamusRegular.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
