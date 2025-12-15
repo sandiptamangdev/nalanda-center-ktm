@@ -2,7 +2,7 @@
 /* connecting fonts from the assets */
 @font-face {
     font-family: 'font_1';
-    src: url(/woff2/Lato-Bold.woff2) format('woff2'),
+    src: url(./woff2/Lato-Bold.woff2) format('woff2'),
         url(/woff/Lato-Bold.woff) format('woff');
     font-weight: normal;
     font-style: normal;
@@ -10,32 +10,32 @@
 }
 @font-face {
     font-family: 'font_2';
-    src: url(/woff2/lato.medium.woff2) format('woff2'),
-        url(/woff/lato.medium.woff) format('woff');
+    src: url(./woff2/lato.medium.woff2) format('woff2'),
+        url(./woff/lato.medium.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'font_3';
-    src: url(/woff2/Lato-Regular.woff2) format('woff2'),
-        url(/woff/Lato-Regular.woff) format('woff');
+    src: url(./woff2/Lato-Regular.woff2) format('woff2'),
+        url(./woff/Lato-Regular.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'font_4';
-    src: url(/woff2/LEMONMILK-Regular.woff2) format('woff2'),
-        url(/woff/LEMONMILK-Regular.woff) format('woff');
+    src: url(./woff2/LEMONMILK-Regular.woff2) format('woff2'),
+        url(./woff/LEMONMILK-Regular.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'font_5';
-    src: url(/woff2/LEMONMILK-Medium.woff2) format('woff2'),
-        url(/woff/LEMONMILK-Medium.woff) format('woff');
+    src: url(./woff2/LEMONMILK-Medium.woff2) format('woff2'),
+        url(./woff/LEMONMILK-Medium.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
