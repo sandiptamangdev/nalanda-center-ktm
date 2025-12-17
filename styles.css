@@ -118,16 +118,9 @@ nav button {
     border-radius: 999px;
     background-color: var(--primary-bg);
 }
-nav button:hover {
-    background-color: var(--acent-clr);
-}
-
-nav button svg:hover {
-    fill: var(--primary-bg);
-}
 
 nav button:active {
-    outline: 2px solid var(--acent-clr);
+    outline: 1px solid var(--acent-clr);
 }
 #active_nav_link {
     color: var(--primary-bg);
@@ -578,7 +571,7 @@ footer .hr-desktop {
 
 /* nav popup */
 .nav_popup {
-    display: none;
+    /* display: none; */
     position: sticky;
     top: 180px;
     left: 0;
@@ -591,9 +584,7 @@ footer .hr-desktop {
     transition: 0.6s ease-in;
     box-shadow: 0px 2px 4px 0 var(--acent-clr);
     opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 0.2s ease, transform 0.2s ease; /* default: fast */
-
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
 .nav_popup_lists {
     display: flex;
@@ -620,21 +611,12 @@ footer .hr-desktop {
 }
 
 .nav_popup_lists a:hover {
-    background-color: var(--acent-clr);
-    color: var(--primary-bg);
-    transform: scale(1.1, 1.1);
-}
-
-.nav_popup_lists a:hover {
     opacity: 0.8;
 }
 
 .nav_popup.active {
     opacity: 1;
-    transform: translateY(0);
-    transition-duration: 0.8s; /* slower for opening */
-    display: flex ;
-
+    transition-duration: 0.5s; 
 }
 
 
