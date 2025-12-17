@@ -649,6 +649,9 @@ nav {
     z-index: 1000;
 }
 @media (min-width: 768px) {
+    .nav_popup {
+        display: none;
+    }
     .nav_wrapper {
         height: 80px;
     }
