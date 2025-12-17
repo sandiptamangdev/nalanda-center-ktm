@@ -4,15 +4,15 @@ function toggleMenu() {
 
     hamburgerBtn.addEventListener('click', () => {
         navPopup.classList.toggle('active');
-        document.body.classList.toggle('no-scroll');
+        // document.body.classList.toggle('no-scroll');
     });
 
     const navPopupList = document.querySelectorAll('.nav_popup_lists');
 
     navPopupList.forEach(list => {
-        list.addEventListener('click', () =>{
+        list.addEventListener('click', () => {
             navPopup.classList.remove('active');
-            document.body.classList.remove('no-scroll');
+            // document.body.classList.remove('no-scroll');
         });
     });
 
@@ -22,10 +22,36 @@ function toggleMenu() {
         resizeTimer = setTimeout(() => {
             if (window.innerWidth > 768) {
                 navPopup.classList.remove('active');
-                document.body.classList.remove('no-scroll');
+                // document.body.classList.remove('no-scroll');
             }
         }, 100);
-    })
+    });
+
+    // 🔹 CLOSE ON SCROLL
+    let lastScrollY = window.scrollY;
+    window.addEventListener('scroll', () => {
+        if (
+            navPopup.classList.contains('active') &&
+            Math.abs(window.scrollY - lastScrollY) > 5
+        ) {
+            navPopup.classList.remove('active');
+            // document.body.classList.remove('no-scroll');
+        }
+        lastScrollY = window.scrollY;
+    }, { passive: true });
+
+    // 🔹 CLOSE ON OUTSIDE CLICK
+    document.addEventListener('click', (e) => {
+        if (!navPopup.classList.contains('active')) return;
+
+        if (
+            !navPopup.contains(e.target) &&
+            !hamburgerBtn.contains(e.target)
+        ) {
+            navPopup.classList.remove('active');
+            // document.body.classList.remove('no-scroll');
+        }
+    });
 }
 
 function swiperImg() {
