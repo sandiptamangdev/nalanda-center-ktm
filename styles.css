@@ -57,6 +57,55 @@
     font-display: swap;
 }
 
+/* ============  defaults  ================================= */
+/* defaults that is needed for the webiste to work plz don't touch this. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body, html {
+    height: 100%;
+    font-family: var(--lato-medium), system-ui, sans-serif;
+}
+body {
+    background-color: var(--primary-bg);
+    color: var(--acent-clr);
+}
+main {
+    min-height: 100%;
+}
+button {
+    cursor: pointer;
+    font-family: inherit, system-ui, sans-serif;
+}
+p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.5;
+    letter-spacing: 0px;
+}
+h1 {
+    font-weight: normal;
+}
+h2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+}
+h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+svg {
+    height: 30px;
+    width: 30px;
+}
+.container {
+    max-width: 1224px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
 /* ==============  variables  =================================== */
 /* variables for easier use of colors and fonts */
 :root {
