@@ -70,6 +70,7 @@
 body, html {
     height: 100%;
     font-family: var(--lato-medium), system-ui, sans-serif;
+    scroll-behavior: smooth;
 }
 body {
     background-color: var(--primary-bg);
@@ -345,6 +346,12 @@ header {
     padding: 1rem 0;
 }
 
+@media (min-width: 768px) {
+    .about {
+        padding: 2rem 0;
+    }
+}
+
 fieldset {
     text-align: center;
     padding: clamp(2rem, 4vw, 3rem);
@@ -443,7 +450,7 @@ legend {
         display: flex;
         flex-direction: row;
         margin-bottom: 0;
-        padding: 2rem;
+        padding: 4rem 2rem;
     }
     .proiects_container .content {
         align-items: flex-start;

@@ -1,0 +1,38 @@
+img {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--acent-clr);
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    /* .gallery_container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .img_container {
+        display: flex;
+        gap: 1rem;
+    }
+    .img_container div {
+        flex: 1;          
+        min-width: 0;
+    } */
+
+
+    .img_container {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .img_container img {
+        height: auto;       /* uniform height */
+        flex-grow: 1;         /* images share extra space proportionally */
+        width: 100%;          /* preserve aspect ratio */
+        object-fit: cover;    /* optional: crop if needed */
+        border-radius: 20px;
+    }
+
+}
