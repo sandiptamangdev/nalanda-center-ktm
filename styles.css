@@ -276,6 +276,7 @@ header {
 .swiper-wrapper img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .swiper-button-prev,
 .swiper-button-next {
@@ -374,6 +375,11 @@ legend {
     text-align: center;
     padding: 1rem;
     font-family: var(--lato-bold), system-ui, sans-serif;
+}
+
+.projects img {
+    object-fit: cover;
+
 }
 .proiects_container {
     display: flex;
@@ -791,14 +797,14 @@ nav {
 /* teaching, pilgrimage tour, nalanda villa*/
 .teaching_container img, .pilgrimage_tour_container img, .nalanda_villa_container img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 @media (min-width: 768px) {
     .teaching_container img, .pilgrimage_tour_container img, .nalanda_villa_container img {
         width: 100%;
-        height: calc(95vh - 80px);
-        /* aspect-ratio: 16 / 9; */
+        height: calc(90vh - 80px);
+        aspect-ratio: 2 / 1;
         object-fit: cover;
     }
 }

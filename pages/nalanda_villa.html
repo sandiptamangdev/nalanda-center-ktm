@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../styles.css">
 
     <script defer src="../js/toggle.js"></script>
 </head>
@@ -55,7 +55,15 @@
     <main>
         <section class="nalanda_villa">
             <div class="nalanda_villa_container">
-                <img src="../img/index/3.jpg" alt="nalanda_villa">
+                <img 
+                    src="../img/mobile/others/3.webp"
+                    srcset="../img/mobile/others/3.webp 414w,
+                            ../img/desktop/others/3.webp 768w"
+                    sizes="(max-width: 768px) 414px,
+                            768px"   
+                    alt="pilgrimage tour" 
+                    loading="lazy" 
+                />
                 <div class="shade">
                     <h2>NALANDA VILLA</h2>
                 </div>
