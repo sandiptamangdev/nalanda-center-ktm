@@ -76,6 +76,9 @@ body {
     background-color: var(--primary-bg);
     color: var(--acent-clr);
 }
+.descriptive_link_text {
+    display: none;
+}
 main {
     min-height: 100%;
 }
